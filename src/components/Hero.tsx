@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative bg-white py-20 lg:py-32 overflow-hidden">
+  return <section className="relative bg-white py-20 lg:py-32 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-light-pink rounded-full blur-3xl opacity-30"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-light-blue rounded-full blur-3xl opacity-30"></div>
@@ -23,24 +20,14 @@ const Hero = () => {
             </div>
             
             <div className="space-y-4">
-              {[
-                "AI-powered plan comparisons — show clients the best options instantly",
-                "Quick quotes from top carriers, all in one platform", 
-                "Paperless enrolment & smart forms save you hours",
-                "Fast, compliant submissions with fewer errors",
-                "Automated renewals, billing & admin support",
-                "Cross-sell HSAs, wellness, and more",
-                "Expert support when you need it — we're here to help"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+              {["AI-powered plan comparisons — show clients the best options instantly", "Quick quotes from top carriers, all in one platform", "Paperless enrolment & smart forms save you hours", "Fast, compliant submissions with fewer errors", "Automated renewals, billing & admin support", "Cross-sell HSAs, wellness, and more", "Expert support when you need it — we're here to help"].map((feature, index) => <div key={index} className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-muted-foreground">{feature}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-brand-magenta hover:bg-brand-magenta/90 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <Button size="lg" className="bg-brand-magenta hover:bg-brand-magenta/90 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[#d81671]">
                 Schedule a Call
               </Button>
             </div>
@@ -81,8 +68,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
