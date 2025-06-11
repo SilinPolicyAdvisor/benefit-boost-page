@@ -36,11 +36,11 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Why Choose Our <span className="text-cyan-600">Digital Platform</span>?
+            Why Choose Our <span className="brand-blue">Digital Platform</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Transform your group insurance business with cutting-edge technology and expert support.
@@ -51,7 +51,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-1"
+              className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-brand-blue/20 hover:-translate-y-1"
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
@@ -59,10 +59,10 @@ const Benefits = () => {
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <h3 className="font-bold text-lg text-foreground group-hover:text-blue-600 transition-colors">
+                    <h3 className="font-bold text-lg text-foreground group-hover:text-brand-blue transition-colors">
                       {benefit.title}
                     </h3>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-brand-light-blue brand-blue px-2 py-1 rounded-full text-xs font-medium">
                       {benefit.highlight}
                     </span>
                   </div>

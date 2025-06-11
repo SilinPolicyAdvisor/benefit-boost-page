@@ -1,3 +1,4 @@
+
 import { CheckCircle, MessageSquare, Search, FileText, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,11 +27,11 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            AI Tools & Expertise at <span className="text-blue-600">Your Fingertips</span>
+            AI Tools & Expertise at <span className="brand-blue">Your Fingertips</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Access our comprehensive suite of AI-powered tools and connect with industry experts to transform your group insurance sales process.
@@ -41,10 +42,10 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="group p-6 rounded-xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white"
+              className="group p-6 rounded-xl bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
             >
               <div className="mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                <div className="w-12 h-12 bg-brand-light-blue rounded-lg flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
                   <feature.icon className="h-6 w-6" />
                 </div>
               </div>
@@ -59,7 +60,7 @@ const Features = () => {
         </div>
 
         {/* Image placeholder section */}
-        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8">
+        <div className="bg-gradient-to-r from-brand-light-pink to-brand-light-blue rounded-2xl p-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -68,7 +69,7 @@ const Features = () => {
               <p className="text-muted-foreground mb-6">
                 Watch how brokers are using our AI tools to streamline their sales process and grow their business with expert support.
               </p>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Button className="bg-brand-magenta hover:bg-brand-magenta/90 text-white">
                 Schedule a Demo Call
               </Button>
             </div>
