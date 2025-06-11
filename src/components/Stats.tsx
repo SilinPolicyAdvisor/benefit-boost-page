@@ -24,12 +24,9 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-light-blue to-brand-light-pink opacity-50"></div>
-      
-      <div className="container mx-auto px-6 lg:px-8 relative">
-        <div className="text-center mb-16 animate-fade-in">
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Trusted by Canada's Leading Group Benefits Brokers
           </h2>
@@ -42,13 +39,13 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="text-center group hover:scale-105 transition-transform duration-300"
+              className="text-center"
             >
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:shadow-xl transition-all duration-300 shadow-lg">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-brand-blue group-hover:text-brand-magenta transition-colors">
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg h-48 flex flex-col justify-center">
+                <div className="text-4xl lg:text-5xl font-bold mb-3 text-gray-900">
                   {stat.number}
                 </div>
-                <div className="text-lg font-semibold mb-1 text-gray-900">
+                <div className="text-lg font-semibold mb-2 text-gray-900">
                   {stat.label}
                 </div>
                 <div className="text-sm text-gray-600">
