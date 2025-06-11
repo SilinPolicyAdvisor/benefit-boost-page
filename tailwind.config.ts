@@ -62,7 +62,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'brand-magenta': 'hsl(var(--brand-magenta))',
+				'brand-blue': 'hsl(var(--brand-blue))',
+				'brand-light-pink': 'hsl(var(--brand-light-pink))',
+				'brand-light-blue': 'hsl(var(--brand-light-blue))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -46,11 +46,11 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Corrected brand colors */
-    --brand-magenta: #D81671;
-    --brand-blue: #16B2E4;
-    --brand-light-pink: #FCE4EC;
-    --brand-light-blue: #E8F8FF;
+    /* Brand colors with proper HSL values */
+    --brand-magenta: 330 85% 47%;
+    --brand-blue: 195 85% 51%;
+    --brand-light-pink: 330 45% 96%;
+    --brand-light-blue: 195 100% 95%;
   }
 
   .dark {
@@ -95,22 +95,34 @@
 }
 
 @layer utilities {
-  .brand-magenta {
-    color: var(--brand-magenta);
+  .text-brand-magenta {
+    color: hsl(var(--brand-magenta));
   }
   .bg-brand-magenta {
-    background-color: var(--brand-magenta);
+    background-color: hsl(var(--brand-magenta));
   }
-  .brand-blue {
-    color: var(--brand-blue);
+  .text-brand-blue {
+    color: hsl(var(--brand-blue));
   }
   .bg-brand-blue {
-    background-color: var(--brand-blue);
+    background-color: hsl(var(--brand-blue));
   }
   .bg-brand-light-pink {
-    background-color: var(--brand-light-pink);
+    background-color: hsl(var(--brand-light-pink));
   }
   .bg-brand-light-blue {
-    background-color: var(--brand-light-blue);
+    background-color: hsl(var(--brand-light-blue));
+  }
+  .border-brand-magenta {
+    border-color: hsl(var(--brand-magenta));
+  }
+  .border-brand-blue {
+    border-color: hsl(var(--brand-blue));
+  }
+  .hover\:bg-brand-magenta\/90:hover {
+    background-color: hsl(var(--brand-magenta) / 0.9);
+  }
+  .hover\:bg-brand-blue\/90:hover {
+    background-color: hsl(var(--brand-blue) / 0.9);
   }
 }

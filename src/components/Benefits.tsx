@@ -45,7 +45,7 @@ const Benefits = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Why Choose Our <span className="brand-blue">Digital MGA Platform</span>?
+            Why Choose Our <span className="text-brand-blue">Digital MGA Platform</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Transform your group insurance business with cutting-edge technology and expert support.
@@ -67,7 +67,7 @@ const Benefits = () => {
                     <h3 className="font-bold text-lg text-foreground group-hover:text-brand-blue transition-colors">
                       {benefit.title}
                     </h3>
-                    <span className="bg-brand-light-blue brand-blue px-2 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-brand-light-blue text-brand-blue px-2 py-1 rounded-full text-xs font-medium">
                       {benefit.highlight}
                     </span>
                   </div>

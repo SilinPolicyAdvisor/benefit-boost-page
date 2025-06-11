@@ -27,11 +27,11 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50" id="features">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            AI Tools & Expertise at <span className="brand-blue">Your Fingertips</span>
+            AI Tools & Expertise at <span className="text-brand-blue">Your Fingertips</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Access our comprehensive suite of AI-powered tools and connect with industry experts to transform your group insurance sales process.
