@@ -74,27 +74,10 @@ const Benefits = () => {
 
   return (
     <section className="py-20 bg-white relative overflow-hidden" id="benefits">
-      {/* Crazy animated background */}
-      <div className="absolute inset-0">
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-20 h-20 rounded-full opacity-5 animate-spin"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              background: `linear-gradient(45deg, #D81671, #16B2E4)`,
-              animationDuration: `${10 + Math.random() * 20}s`,
-              animationDirection: Math.random() > 0.5 ? 'normal' : 'reverse',
-            }}
-          />
-        ))}
-      </div>
-      
       <div className="container mx-auto px-6 lg:px-8 relative">
         <div className="text-center mb-16 scroll-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 hover:scale-105 transition-transform duration-300">
-            Why Choose Our <span className="brand-blue animate-pulse">Digital MGA Platform</span>?
+            Why Choose Our <span className="brand-blue">Digital MGA Platform</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Transform your group insurance business with cutting-edge technology and expert support.
@@ -107,16 +90,15 @@ const Benefits = () => {
               key={index}
               data-index={index}
               className={`benefit-item group bg-white p-8 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-700 border border-gray-100 hover:border-brand-blue/20 hover:scale-105 hover:rotate-1 ${
-                visibleItems[index] ? 'animate-bounce' : 'opacity-0 translate-y-10'
+                visibleItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{
-                transitionDelay: `${index * 100}ms`,
-                animationDelay: `${index * 150}ms`
+                transitionDelay: `${index * 100}ms`
               }}
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
+                  <CheckCircle className="h-6 w-6 text-green-500 mt-1 group-hover:scale-125 transition-all duration-300" />
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 flex-wrap">

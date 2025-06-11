@@ -56,24 +56,7 @@ const Stats = () => {
 
   return (
     <section id="stats" className="py-20 bg-gradient-to-r from-brand-blue to-cyan-500 text-white relative overflow-hidden">
-      {/* Crazy background effects */}
       <div className="absolute inset-0 bg-blue-800/20 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:20px_20px]"></div>
-      
-      {/* Floating elements with parallax */}
-      <div className="absolute inset-0">
-        {[...Array(10)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-4 h-4 bg-white/10 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              transform: `translateY(${scrollY * (0.1 + Math.random() * 0.3)}px)`,
-              animationDelay: `${Math.random() * 3}s`,
-            }}
-          />
-        ))}
-      </div>
       
       <div className="container mx-auto px-6 lg:px-8 relative">
         <div className="text-center mb-16 scroll-fade-in">
@@ -90,10 +73,9 @@ const Stats = () => {
             <div 
               key={index} 
               className={`text-center group hover:scale-110 transition-all duration-700 ${
-                isVisible ? 'animate-bounce' : 'opacity-0 translate-y-10'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{
-                animationDelay: `${index * 200}ms`,
                 transitionDelay: `${index * 100}ms`
               }}
             >
@@ -101,7 +83,7 @@ const Stats = () => {
                 <div className="text-4xl mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
                   {stat.icon}
                 </div>
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-white group-hover:text-yellow-300 transition-colors duration-300 hover:animate-pulse">
+                <div className="text-4xl lg:text-5xl font-bold mb-2 text-white group-hover:text-yellow-300 transition-colors duration-300">
                   {stat.number}
                 </div>
                 <div className="text-lg font-semibold mb-1 text-blue-100 group-hover:text-white transition-colors duration-300">
