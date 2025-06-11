@@ -24,16 +24,16 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-brand-blue to-cyan-500 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-brand-blue to-brand-magenta text-white relative overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-blue-800/20 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:20px_20px]"></div>
+      <div className="absolute inset-0 bg-black/10 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:20px_20px]"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
             Trusted by Canada's Leading Group Benefits Brokers
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Join thousands of successful brokers who are growing their group benefits business with our platform.
           </p>
         </div>
@@ -48,10 +48,10 @@ const Stats = () => {
                 <div className="text-4xl lg:text-5xl font-bold mb-2 text-white group-hover:text-yellow-300 transition-colors">
                   {stat.number}
                 </div>
-                <div className="text-lg font-semibold mb-1 text-blue-100">
+                <div className="text-lg font-semibold mb-1 text-white">
                   {stat.label}
                 </div>
-                <div className="text-sm text-blue-200">
+                <div className="text-sm text-white/80">
                   {stat.description}
                 </div>
               </div>
