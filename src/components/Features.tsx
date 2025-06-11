@@ -1,5 +1,5 @@
-
 import { CheckCircle, MessageSquare, Search, FileText, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Features = () => {
   const features = [
