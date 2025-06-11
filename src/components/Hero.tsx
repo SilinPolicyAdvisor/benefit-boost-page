@@ -14,11 +14,11 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Boost group benefits sales{" "}
-                <span className="brand-blue">effortlessly</span>
+                Sell Group Health Insurance{" "}
+                <span className="brand-blue">Smarter</span> with a Digital MGA
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Access cutting-edge tools and expert support to close more group health benefits and streamline your sales process.
+                Close deals faster. Save time. Grow your group benefits business.
               </p>
             </div>
             
@@ -26,7 +26,11 @@ const Hero = () => {
               {[
                 "AI-powered plan comparisons — show clients the best options instantly",
                 "Quick quotes from top carriers, all in one platform", 
-                "Expert underwriting support and digital marketing expertise"
+                "Paperless enrolment & smart forms save you hours",
+                "Fast, compliant submissions with fewer errors",
+                "Automated renewals, billing & admin support",
+                "Cross-sell HSAs, wellness, and more",
+                "Expert support when you need it — we're here to help"
               ].map((feature, index) => (
                 <div key={index} className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
@@ -47,28 +51,28 @@ const Hero = () => {
               <div className="space-y-6">
                 <div className="aspect-video bg-white rounded-lg shadow-inner flex items-center justify-center">
                   <p className="text-gray-600 text-center px-4 text-sm">
-                    [Image: Dashboard showing group benefits comparison interface with multiple carrier options, AI chat assistant, and broker analytics - modern, clean interface similar to the reference image style]
+                    [Image: Modern broker dashboard showing group benefits comparison interface with multiple carrier options, digital enrollment forms, and automated workflow tools - clean, professional interface with the brand's magenta and blue color scheme]
                   </p>
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-lg text-center">AI-Powered Broker Platform</h3>
+                  <h3 className="font-semibold text-lg text-center">Digital MGA Platform</h3>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="bg-white p-3 rounded-lg border border-gray-100">
-                      <div className="font-medium brand-magenta">Conversational AI</div>
-                      <div className="text-gray-600">Engage prospects</div>
+                      <div className="font-medium brand-magenta">AI Comparisons</div>
+                      <div className="text-gray-600">Instant insights</div>
                     </div>
                     <div className="bg-white p-3 rounded-lg border border-gray-100">
-                      <div className="font-medium brand-blue">Quote Comparison</div>
-                      <div className="text-gray-600">Multiple carriers</div>
+                      <div className="font-medium brand-blue">Multi-Carrier</div>
+                      <div className="text-gray-600">One platform</div>
                     </div>
                     <div className="bg-white p-3 rounded-lg border border-gray-100">
-                      <div className="font-medium text-green-600">Expert Support</div>
-                      <div className="text-gray-600">24/7 available</div>
+                      <div className="font-medium text-green-600">Paperless</div>
+                      <div className="text-gray-600">Smart forms</div>
                     </div>
                     <div className="bg-white p-3 rounded-lg border border-gray-100">
-                      <div className="font-medium text-purple-600">Digital Marketing</div>
-                      <div className="text-gray-600">Lead generation</div>
+                      <div className="font-medium text-purple-600">Automated</div>
+                      <div className="text-gray-600">Admin support</div>
                     </div>
                   </div>
                 </div>

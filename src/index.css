@@ -46,11 +46,11 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Custom brand colors from the uploaded image */
-    --brand-magenta: #E91E63;
-    --brand-blue: #00BCD4;
+    /* Corrected brand colors */
+    --brand-magenta: #D81671;
+    --brand-blue: #16B2E4;
     --brand-light-pink: #FCE4EC;
-    --brand-light-blue: #E0F7FA;
+    --brand-light-blue: #E8F8FF;
   }
 
   .dark {

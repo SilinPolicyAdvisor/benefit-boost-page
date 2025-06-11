@@ -10,7 +10,7 @@ const Benefits = () => {
     },
     {
       title: "Instant Quote Generation & Comparison", 
-      description: "Generate multiple carrier quotes in seconds, not hours, giving you competitive edge",
+      description: "Generate multiple carrier quotes in seconds, not hours, giving you competitive edge in client meetings",
       highlight: "Real-time"
     },
     {
@@ -20,27 +20,32 @@ const Benefits = () => {
     },
     {
       title: "Client-Ready Presentations at Your Fingertips",
-      description: "Professional quote comparisons and proposals that impress prospects",
+      description: "Professional quote comparisons and proposals that impress prospects and accelerate decisions",
       highlight: "Auto-generated"
     },
     {
+      title: "Advanced Market Solutions",
+      description: "Navigate challenging group insurance placements with technology-backed expert guidance",
+      highlight: "Expert-backed"
+    },
+    {
       title: "Strategic Lead Origination Engine",
-      description: "Proprietary prospecting algorithms deliver qualified opportunities directly to your pipeline",
+      description: "Proprietary prospecting algorithms and market intelligence deliver qualified group insurance opportunities directly to your pipeline",
       highlight: "AI-powered"
     },
     {
       title: "Performance Marketing Amplification",
-      description: "Comprehensive digital marketing support including LinkedIn campaigns and content marketing",
+      description: "Comprehensive digital marketing support including LinkedIn campaigns, content marketing, and thought leadership positioning to establish market authority",
       highlight: "Full-service"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="benefits">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Why Choose Our <span className="brand-blue">Digital Platform</span>?
+            Why Choose Our <span className="brand-blue">Digital MGA Platform</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Transform your group insurance business with cutting-edge technology and expert support.
