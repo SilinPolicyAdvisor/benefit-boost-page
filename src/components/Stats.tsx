@@ -24,16 +24,16 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-brand-blue to-brand-magenta text-white relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-black/10 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:20px_20px]"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-light-blue to-brand-light-pink opacity-50"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Trusted by Canada's Leading Group Benefits Brokers
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Join thousands of successful brokers who are growing their group benefits business with our platform.
           </p>
         </div>
@@ -44,14 +44,14 @@ const Stats = () => {
               key={index} 
               className="text-center group hover:scale-105 transition-transform duration-300"
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-colors duration-300">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-white group-hover:text-yellow-300 transition-colors">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:shadow-xl transition-all duration-300 shadow-lg">
+                <div className="text-4xl lg:text-5xl font-bold mb-2 text-brand-blue group-hover:text-brand-magenta transition-colors">
                   {stat.number}
                 </div>
-                <div className="text-lg font-semibold mb-1 text-white">
+                <div className="text-lg font-semibold mb-1 text-gray-900">
                   {stat.label}
                 </div>
-                <div className="text-sm text-white/80">
+                <div className="text-sm text-gray-600">
                   {stat.description}
                 </div>
               </div>
