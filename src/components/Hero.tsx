@@ -14,20 +14,20 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Sell Group Health Insurance{" "}
-                <span className="text-blue-600">Smarter</span> with a{" "}
-                <span className="text-cyan-600">Digital MGA</span>
+                Connect with AI Tools & Expertise to{" "}
+                <span className="text-blue-600">Sell Group Insurance</span>{" "}
+                <span className="text-cyan-600">Smarter</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Close deals faster, save time, and grow your group benefits business with our AI-powered platform.
+                Access our AI-powered tools, expert support, and digital marketing expertise to close deals faster and grow your group benefits business.
               </p>
             </div>
             
             <div className="space-y-4">
               {[
                 "AI-powered plan comparisons — show clients the best options instantly",
-                "Quick quotes from top carriers, all in one platform",
-                "Paperless enrolment & smart forms save you hours"
+                "Conversational AI tools to engage prospects effectively",
+                "Expert underwriting support and digital marketing expertise"
               ].map((feature, index) => (
                 <div key={index} className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
@@ -38,10 +38,10 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                Start Free Demo
+                Schedule a Call
               </Button>
               <Button variant="outline" size="lg" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300">
-                Watch Demo
+                Learn More
               </Button>
             </div>
           </div>
@@ -49,30 +49,32 @@ const Hero = () => {
           <div className="relative animate-scale-in">
             <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
               <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-semibold text-lg">Quote Comparison</h3>
-                  <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                    Live Data
-                  </div>
+                <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 rounded-lg flex items-center justify-center">
+                  <p className="text-gray-600 text-center px-4">
+                    [Image: Professional insurance broker using AI tools on laptop, modern office setting with charts and data visualizations in background]
+                  </p>
                 </div>
                 
                 <div className="space-y-4">
-                  {[
-                    { carrier: "Carrier A", premium: "$2,340", savings: "Best Value" },
-                    { carrier: "Carrier B", premium: "$2,580", savings: "Premium" },
-                    { carrier: "Carrier C", premium: "$2,720", savings: "Standard" }
-                  ].map((quote, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg border hover:border-blue-300 transition-colors">
-                      <div>
-                        <div className="font-medium">{quote.carrier}</div>
-                        <div className="text-sm text-muted-foreground">{quote.savings}</div>
-                      </div>
-                      <div className="text-right">
-                        <div className="font-bold text-lg">{quote.premium}</div>
-                        <div className="text-sm text-muted-foreground">per month</div>
-                      </div>
+                  <h3 className="font-semibold text-lg text-center">AI-Powered Broker Platform</h3>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="bg-blue-50 p-3 rounded-lg">
+                      <div className="font-medium text-blue-800">Conversational AI</div>
+                      <div className="text-blue-600">Engage prospects</div>
                     </div>
-                  ))}
+                    <div className="bg-cyan-50 p-3 rounded-lg">
+                      <div className="font-medium text-cyan-800">Quote Comparison</div>
+                      <div className="text-cyan-600">Multiple carriers</div>
+                    </div>
+                    <div className="bg-green-50 p-3 rounded-lg">
+                      <div className="font-medium text-green-800">Expert Support</div>
+                      <div className="text-green-600">24/7 available</div>
+                    </div>
+                    <div className="bg-purple-50 p-3 rounded-lg">
+                      <div className="font-medium text-purple-800">Digital Marketing</div>
+                      <div className="text-purple-600">Lead generation</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
